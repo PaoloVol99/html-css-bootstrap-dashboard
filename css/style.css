@@ -9,10 +9,10 @@ a {
 
 /* DEBUG */
 
-.debug [class^="col"] {
+/* .debug [class^="col"] {
     border: 1px dashed salmon;
     padding: 10px;
-}
+} */
 
 .debug .ps_header {
     background-color: white;
@@ -52,11 +52,10 @@ a {
     flex-grow: 1;
 }
 
-.ps_search::before {
-    content: "\f002";
-    display: block;
-    font-family: 'Font Awesome 5 Free';
+.ps_search {
+    padding-left: 30px;
 }
+    
 
 tbody img {
     max-width: 20px;
@@ -65,3 +64,13 @@ tbody img {
 .ps_stats {
     max-width: 100%;
 }
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.fa-solid.fa-magnifying-glass {
+    position: absolute;
+    left: 10px;
+}
+
