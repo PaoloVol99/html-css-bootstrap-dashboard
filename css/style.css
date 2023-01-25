@@ -1,0 +1,67 @@
+:root {
+    --header-height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* DEBUG */
+
+.debug [class^="col"] {
+    border: 1px dashed salmon;
+    padding: 10px;
+}
+
+.debug .ps_header {
+    background-color: white;
+}
+
+.debug .ps_aside {
+    background-image: url("../img/sidebar-bg.png");
+    background-color: #061E34;
+}
+
+.debug .ps_main {
+    background-color: white;
+}
+
+/* GENERAL RULES */
+
+.ps_blue-bg {
+    background-color: rgb(64, 119, 229);
+}
+
+.ps_aside {
+    background-image: url("../img/sidebar-bg.png");
+    background-color: #061E34;
+    width: 140px;
+}
+
+.ps_content-wrapper {
+    display: flex;
+    height: calc(100vh - var(--header-height));
+}
+
+.ps_header {
+    height: var(--header-height);
+}
+
+.ps_main {
+    flex-grow: 1;
+}
+
+.ps_search::before {
+    content: "\f002";
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+}
+
+tbody img {
+    max-width: 20px;
+}
+
+.ps_stats {
+    max-width: 100%;
+}
